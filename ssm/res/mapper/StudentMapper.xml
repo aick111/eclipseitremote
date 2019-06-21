@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace:该mapper.xml映射文件的 唯一标识 -->
+<mapper namespace="org.wqd.dao.StudentMapper">
+
+	<select id="queryObject" parameterType="int"
+		resultType="org.wqd.entity.Student">
+		select * from student where
+		stuno = #{stuNo}
+	</select>
+
+
+	<insert id="save" parameterType="org.wqd.entity.Student">
+		insert into
+		student(stuname,stuage)
+		values(#{stuName},#{stuAge})
+	</insert>
+
+</mapper>
