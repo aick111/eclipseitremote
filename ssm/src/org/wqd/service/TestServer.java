@@ -36,7 +36,10 @@ public class TestServer {
 		sqlServerJDBCTest();
 	}
 
-	// 直接替换 驱动与url 地址
+	/**
+	 * 
+	 * @Description: TODO 直接替换 驱动与url 地址 sqlServerJDBCTest
+	 */
 	public static void sqlServerJDBCTest() {
 		// 创建数据库连接对象、预编译的statement对象和结果
 		Connection connection = null;
@@ -71,7 +74,10 @@ public class TestServer {
 		}
 	}
 
-	// 直接替换 驱动与url 地址
+	/**
+	 * 
+	 * @Description: TODO 直接替换 驱动与url 地址 mysqlJDBCTest
+	 */
 	public static void mysqlJDBCTest() {
 		// 创建数据库连接对象、预编译的statement对象和结果
 		Connection connection = null;
